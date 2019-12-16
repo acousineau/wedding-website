@@ -1,0 +1,29 @@
+scalar Date
+
+# Available to the API
+type Habit {
+  _id: ID!
+  name: String!
+  events: [Event]
+}
+
+type Event {
+  _id: ID!
+  date: Date
+}
+
+# Shaping data that comes back to the API
+input HabitInput {
+  _id: ID
+  name: String!
+}
+
+type Mutation {
+  addHabit(habit: HabitInput): Habit
+  addEvent(habitId: ID, date: Date): Habit
+  removeEvent(habitId: ID, eventId: ID): Habit
+}
+
+type Query {
+  habits: [Habit]
+}
