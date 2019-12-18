@@ -1,6 +1,5 @@
 scalar Date
 
-# Available to the API
 type Habit {
   _id: ID!
   name: String!
@@ -12,7 +11,6 @@ type Event {
   date: Date
 }
 
-# Shaping data that comes back to the API
 input HabitInput {
   _id: ID
   name: String!

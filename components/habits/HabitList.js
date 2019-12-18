@@ -9,7 +9,7 @@ const GET_HABITS = gql`
       name
       events {
         _id
-        name
+        date
       }
     }
   }
@@ -17,7 +17,7 @@ const GET_HABITS = gql`
 
 const HabitList = () => {
   const { data, loading, error } = useQuery(GET_HABITS)
-  if (loading || error) return <div></div>
+  if (loading || error) return <section />
   const { habits } = data
   return (
     <section>

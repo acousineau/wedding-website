@@ -20,6 +20,10 @@ const fakeResolvers = {
 }
 
 const resolvers = mergeResolvers([fakeResolvers, habitsResolvers, habitsMutations])
+// Habit
+// console.log(mergeTypeDefs([fakeTypeDefs, Habits]).definitions[0].fields[1].type.type.name)
+// Habit Details - Events
+// console.log(mergeTypeDefs([fakeTypeDefs, Habits]).definitions[1].fields[2].type.type)
 const typeDefs = mergeTypeDefs([fakeTypeDefs, Habits])
 
 const apolloServer = new ApolloServer({ typeDefs, resolvers })

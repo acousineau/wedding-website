@@ -30,7 +30,7 @@ const Hero = styled.div`
 
 const Home = () => {
   const { data, loading, error } = useQuery(HELLO_QUERY)
-  if (loading) return <div></div>
+  if (loading || error) return <div></div>
   return (
     <Layout>
       <Hero>

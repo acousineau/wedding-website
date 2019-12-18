@@ -1,5 +1,3 @@
-import { GraphQLScalarType } from 'graphql'
-import { Kind } from 'graphql/language'
 import Habits from './habits'
 
 export const habitsMutations = {
@@ -16,28 +14,43 @@ export const habitsMutations = {
     },
 
     async removeEvent(_, { habitId, eventId }) {
-      console.log('Remove event')
+      try {
+        const habit = await Habits.findOneAndUpdate(
+          {
+            _id: habitId
+          },
+          {
+            $pull: {
+              events: {
+                _id: eventId
+              }
+            }
+          }
+        )
+        return habit
+      } catch (error) {}
     },
 
     async addEvent(_, { habitId, date }) {
-      console.log('Add event')
+      try {
+        date.setHours(0, 0, 0, 0)
+        const habit = await Habits.findOneAndUpdate(
+          {
+            _id: habitId,
+            'events.date': {
+              $ne: date
+            }
+          },
+          {
+            $addToSet: {
+              events: {
+                date
+              }
+            }
+          }
+        )
+        return habit
+      } catch (error) {}
     }
-  },
-
-  Date: new GraphQLScalarType({
-    name: 'Date',
-    description: 'Date custom scalar',
-    parseValue(value) {
-      return new Date(value) // value thats coming from the client
-    },
-    serialize(value) {
-      return value.getTime() // value that sent to the client
-    },
-    parseLiteral(ast) {
-      if (ast.kind === Kind.INT) {
-        return new Date(ast.value)
-      }
-      return null
-    }
-  })
+  }
 }

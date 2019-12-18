@@ -18,7 +18,6 @@ const HabitForm = () => {
   return (
     <Form
       onSubmit={data => {
-        console.log(data)
         addHabit({ variables: { habit: { name: data.habit } } })
       }}
     >
