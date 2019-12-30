@@ -1,0 +1,87 @@
+html {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: 100%;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Body: Libre Franklin, 18px, #ffffff
+// Link: #a2b46c, display underline when active
+// H1: Teko Light, 40px, all caps, #ffffff, adjust letter spacing
+// H2: Libre Franklin Bold, 18px, all caps, #ffffff, adjust letter spacing
+// H3: Libre Franklin Bold, 15px, all caps, #a08b85, adjust letter spacing
+// H4: Libre Franklin Bold, 15px, all caps, #ffffff, adjust letter spacing
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-weight: normal;
+  font-size: $display-font-size;
+  line-height: $heading-line-height;
+  margin: 0 0 10px;
+  font-style: normal;
+
+  @include breakpoint-max(768px) {
+    font-size: 30px;
+  }
+}
+
+h1 {
+  // $display-font-size: 40px;
+  font-size: 56px;
+}
+
+h2 {
+  // $subhead-large-font-size: 18px;
+}
+
+h3 {
+  // $subhead-small-font-size: 15px;
+}
+
+h4 {
+}
+
+p {
+  margin: 0 0 $small-spacing;
+  font-size: $base-font-size;
+}
+
+.t-base { font-size: $base-font-size; }
+.t-subhead-small { font-size: $subhead-small-font-size; }
+.t-subhead-large { font-size: $subhead-large-font-size; }
+.t-display { font-size: $display-font-size; }
+
+a {
+  color: $action-color;
+  text-decoration-skip-ink: auto;
+  transition: color $base-duration $base-timing;
+  font-weight: bold;
+
+  &:hover {
+    color: shade($action-color, 25%);
+  }
+
+  &:focus {
+    outline: $focus-outline;
+    outline-offset: $focus-outline-offset;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: $base-spacing 0;
+}
+
+.t-bold {
+  font-weight: bold;
+}

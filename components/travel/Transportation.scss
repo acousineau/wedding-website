@@ -1,0 +1,41 @@
+@import "core";
+
+.Transportation {
+  display: flex;
+  margin-bottom: 30px;
+
+  @include breakpoint-max(700px) {
+    display: block;
+  }
+
+  .image-container {
+    display: inline-block;
+    width: 250px; 
+    margin-right: 50px;
+
+    @include breakpoint-max(700px) {
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    img {
+      border-radius: 10px;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        box-shadow: 2px 2px 5px #274F7E;
+        transform: scale(1.01);
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  p {
+    display: inline-block;
+    width: calc(100% - 300px);
+
+    @include breakpoint-max(700px) {
+      width: 100%;
+    }
+  }
+}

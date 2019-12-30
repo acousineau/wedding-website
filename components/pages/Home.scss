@@ -1,0 +1,34 @@
+@import "core";
+
+.Home {
+  .Hero {
+    background-image: url("/crops/home-background.jpg");
+
+    @include breakpoint-max(768px) {
+      height: 210px;
+      background-position-x: right;
+    }
+
+    h1 {
+      color: #fff;
+      font-size: 100px;
+      position: absolute;
+      bottom: 10%;
+      left: 7%;
+
+      @include breakpoint-max(768px) {
+        font-size: 50px;
+        top: 27%;
+      }
+    }
+  }
+
+  .date-location {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .booking {
+    text-align: center;
+  }
+}

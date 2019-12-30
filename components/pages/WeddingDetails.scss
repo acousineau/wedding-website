@@ -1,0 +1,68 @@
+@import "core";
+
+.WeddingDetails {
+  .Hero {
+    background-image: url("/crops/details-background.jpg");
+
+    @include breakpoint-max(670px) {
+      height: 210px;
+      background-position-x: center;
+    }
+  }
+
+  p {
+    @include breakpoint-max(500px) {
+      font-size: 16px;
+    }
+  }
+
+  .main-details {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoint-max(768px) {
+      display: block;
+    }
+
+    p {
+      display: inline-block;
+      width: 50%;
+
+      @include breakpoint-max(768px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .schedule {
+    article {
+      margin-bottom: 20px;
+
+      h3 {
+        font-family: 'Montserrat';
+        color: #274F7E;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 20px;
+
+        @include breakpoint-max(500px) {
+          font-size: 26px;
+        }
+      }
+  
+      h4 {
+        text-shadow: 1px 1px 5px #aaa;
+        font-size: 26px;
+  
+        &:after {
+          content: '';
+          display: block;
+          width: 75px;
+          padding-top: 7px;
+          border-bottom: 2px solid #666;
+        }
+      }
+    }
+  }
+}

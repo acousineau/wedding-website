@@ -1,0 +1,40 @@
+@import "core";
+
+.TravelAndLodging {
+  .Hero {
+    background-image: url("/crops/travel-lodging-background.jpg");
+
+    @include breakpoint-max(670px) {
+      height: 210px;
+      background-position-x: center;
+    }
+  }
+
+  header {
+    color: #274F7E;
+    // text-shadow: 1px 1px 10px #274F7E;
+  }
+
+  p {
+    @include breakpoint-max(500px) {
+      font-size: 16px;
+    }
+  }
+
+  .lodge-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    & > article {
+      width: calc(50% - 20px);
+      margin-right: 20px;
+      margin-bottom: 20px;
+
+      @include breakpoint-max(540px) {
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  }
+}
