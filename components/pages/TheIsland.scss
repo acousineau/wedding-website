@@ -40,7 +40,7 @@
   .title {
     margin-bottom: 30px;
 
-    @include breakpoint-max(500px) {
+    @include breakpoint-max(768px) {
       font-size: 36px;
     }
 

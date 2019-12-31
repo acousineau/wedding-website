@@ -160,11 +160,11 @@ const Navigation = () => {
             <a>Registry</a>
           </Link>
         </li>
-        {/* <li>
-        <Link href="/rsvp">
-          <a>RSVP</a>
-        </Link>
-      </li> */}
+        <li>
+          <Link href="/rsvp">
+            <a>RSVP</a>
+          </Link>
+        </li>
       </ul>
       <ul className="mobile-nav" style={{ maxHeight: `${isMobileMenuOpen ? '100vh' : '0'}` }}>
         <li>
@@ -195,6 +195,11 @@ const Navigation = () => {
         <li>
           <Link href="/registry">
             <a>Registry</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/rsvp">
+            <a>RSVP</a>
           </Link>
         </li>
       </ul>

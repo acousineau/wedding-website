@@ -12,12 +12,12 @@ export const Lodge = ({ image, link, name, address }) => {
         }}
       />
       <div className="content">
-        <h4>
+        <h4 className="Lodge--title">
           <a href={link} rel="noopener noreferrer" target="_blank">
             {name}
           </a>
         </h4>
-        <p>{address}</p>
+        <p className="t-bold">{address}</p>
       </div>
     </article>
   )

@@ -10,7 +10,7 @@ export const Location = ({ image, description, name, address, reverseDisplay }) 
       </div>
       <div className="details-container">
         <h3>{name}</h3>
-        {address && <h4>{address}</h4>}
+        {address && <p className="t-bold">{address}</p>}
         <p>{description}</p>
       </div>
     </article>
