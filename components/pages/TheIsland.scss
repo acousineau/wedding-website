@@ -1,0 +1,55 @@
+@import "core";
+
+.TheIsland {
+  .Hero {
+    background-image: url("/crops/island-background.jpg");
+
+    @include breakpoint-max(670px) {
+      height: 210px;
+      background-position-x: center;
+    }
+  }
+
+  header {
+    // color: $dark-blue;
+    // text-shadow: 1px 1px 10px #274F7E;
+  }
+
+  p {
+    @include breakpoint-max(500px) {
+      font-size: 16px;
+    }
+  }
+
+  .map-container {
+    margin-bottom: 30px;
+  }
+
+  .map {
+    border: none;
+    border-radius: 5px;
+    height: 500px;
+  }
+
+  .island {
+    @include breakpoint-max(500px) {
+      font-size: 36px;
+    }
+  }
+
+  .title {
+    margin-bottom: 30px;
+
+    @include breakpoint-max(500px) {
+      font-size: 36px;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 50px;
+      padding-top: 7px;
+      border-bottom: 2px solid $dark-blue;
+    }
+  }
+}

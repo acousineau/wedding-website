@@ -13,18 +13,18 @@ const Home = () => {
       </Hero>
       <Container>
         <section className="date-location">
-          <p>Please join us for our wedding celebration on</p>
-          <h3 style={{ color: '#274F7E' }}>September 12, 2020</h3>
-          <h4 style={{ color: '#274F7E' }}>Edgartown, Martha's Vineyard</h4>
+          <p>Please join us for our wedding celebration&nbsp;on</p>
+          <h3 style={{ color: '#274F7E' }}>September 12,&nbsp;2020</h3>
+          <h4 style={{ color: '#274F7E' }}>Edgartown, Martha's&nbsp;Vineyard</h4>
         </section>
         <section className="booking">
-          <p className="t-bold">Vineyard hotels are booking up quickly</p>
+          <p className="t-bold">Vineyard hotels are booking up&nbsp;quickly</p>
           <p>
             Head over to{' '}
             <Link href="/travel-lodging">
               <a>Travel &amp; Lodging</a>
             </Link>{' '}
-            for suggestions on where to stay!
+            for suggestions on where to&nbsp;stay!
           </p>
         </section>
       </Container>

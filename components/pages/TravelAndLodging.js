@@ -29,7 +29,7 @@ const TravelAndLodging = () => {
             from Woods Hole, MA. This is the only option for bringing a car with you, which
             requires an advance reservation (book as early as you can). You can also park in one
             of the desginated lots and take the ferry on foot, which does not require any advance
-            booking. The ferry has a number of departures daily and takes about 45 mintues."
+            booking. The ferry has a number of departures daily and takes about 45&nbsp;mintues."
           />
           <Transportation
             image={{
@@ -41,7 +41,7 @@ const TravelAndLodging = () => {
               url: 'https://seastreak.com/'
             }}
             text="A separate fast ferry service can take you to the island directly from New York or
-            Boston (on foot):"
+            Boston&nbsp;(on foot):"
           />
           <Transportation
             image={{
@@ -52,15 +52,14 @@ const TravelAndLodging = () => {
               url: 'https://www.capeair.com/',
               text: 'Cape Air Service'
             }}
-            text="Alternatively, Cape Air offers year round air travel from Boston Logan to Martha's
-            Vineyard:"
+            text="Alternatively, Cape Air offers year round air travel from Boston Logan to Martha's&nbsp;Vineyard:"
           />
           <p>
             Visit the local{' '}
             <a href="https://www.mvy.com/gethere.html" target="_blank" rel="noopener noreferrer">
               Chamber of Commerce website
             </a>{' '}
-            for additional information
+            for additional&nbsp;information
           </p>
         </section>
         <section>
@@ -70,7 +69,7 @@ const TravelAndLodging = () => {
               We recommend booking your lodging <strong>as early as possible.</strong> Also, please
               be aware that Martha's Vineyard hotels have a two night minimum. There are a few
               Airbnbs that may be available for a one night stay. Please let us know if you need any
-              assistance with booking your accommodations!
+              assistance with booking your&nbsp;accommodations!
             </p>
           </header>
           <div className="lodge-container">
@@ -83,7 +82,7 @@ const TravelAndLodging = () => {
             <Lodge
               image="/travel/harborview-hotel.jpg"
               link="https://www.harborviewhotel.com/"
-              name="The Harbor View Hotel"
+              name="The Harbor View&nbsp;Hotel"
               address="131 N Water St, Edgartown"
             />
             <Lodge
@@ -95,7 +94,7 @@ const TravelAndLodging = () => {
             <Lodge
               image="/travel/clarion.jpg"
               link="https://www.choicehotels.com/massachusetts/edgartown/ascend-hotels/ma073"
-              name="Clarion Inn / Ascend Hotel"
+              name="Clarion Inn / Ascend&nbsp;Hotel"
               address="227 Upper Main St, Edgartown"
             />
             <Lodge
@@ -108,7 +107,7 @@ const TravelAndLodging = () => {
               image="/travel/airbnb.jpg"
               link="https://www.airbnb.com/s/Edgartown--MA/homes?refinement_paths%5B%5D=%2Fhomes&current_tab_id=home_tab&selected_tab_id=home_tab&screen_size=large&search_type=unknown&hide_dates_and_guests_filters=false&ne_lat=41.42249114403775&ne_lng=-70.49604140227069&sw_lat=41.35436228804499&sw_lng=-70.59491835539569&zoom=13&search_by_map=true&checkin=2020-09-11&checkout=2020-09-13"
               name="Airbnb"
-              address="The most budget friendly option for your stay"
+              address="The most budget friendly option for your&nbsp;stay"
             />
           </div>
         </section>

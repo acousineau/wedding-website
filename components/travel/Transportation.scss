@@ -23,7 +23,7 @@
       transition: all 0.2s ease-in-out;
 
       &:hover {
-        box-shadow: 2px 2px 5px #274F7E;
+        box-shadow: 2px 2px 5px $dark-blue;
         transform: scale(1.01);
         transition: all 0.2s ease-in-out;
       }
