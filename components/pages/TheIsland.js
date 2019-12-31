@@ -41,7 +41,7 @@ const TheIsland = () => {
                   alt: 'Lighthouse Beach'
                 }}
                 address="N Water St, Edgartown"
-                description="Swing by the Edgartown Lighthouse and take a scenic walk on teh beach with views of Edgartown Harbor and Chappaquiddick&nbsp;Island"
+                description="Swing by the Edgartown Lighthouse and take a scenic walk on the beach with views of Edgartown Harbor and Chappaquiddick Island"
               />
               <Location
                 reverseDisplay

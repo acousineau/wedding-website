@@ -44,6 +44,7 @@
   .details-container {
     width: 66%;
     padding: 0 30px;
+    text-align: center;
 
     @include breakpoint-max(500px) {
       width: 100%;
