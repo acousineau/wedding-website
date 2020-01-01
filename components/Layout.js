@@ -6,8 +6,8 @@ const Layout = ({ navTitle, children }) => {
   return (
     <div>
       <Head>
-        <title>Claire and Andy</title>
-        {/* <link rel="icon" href="/favicon.ico" /> */}
+        <title>Claire and Andy Wedding</title>
+        <link rel="icon" href="/favicon.ico" />
         <link
           href="https://fonts.googleapis.com/css?family=Pinyon+Script&display=swap"
           rel="stylesheet"
