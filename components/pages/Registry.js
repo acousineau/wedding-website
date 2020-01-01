@@ -12,22 +12,18 @@ const Registry = () => {
       <Hero className="Hero" />
       <Container>
         <div className="description-container">
-          <p style={{ marginBottom: '30px' }}>
-            We're lucky to already have so much of what we need for our home, so we’ve created a
-            registry for our dream safari honeymoon in&nbsp;Tanzania!
-          </p>
           <p>
-            The biggest gift of all, however, is your presence on our Big Day. Thank you for your
-            love and support, and we can't wait to share our honeymoon adventures with you
-            in&nbsp;October!
+            We're lucky to already have many of the things we need for our home, but would
+            appreciate monetary contributions. If you prefer a traditional gift, our Amazon registry
+            is&nbsp;below!
           </p>
         </div>
         <div className="register-container">
-          <Register
+          {/* <Register
             image="/registry/safari.jpg"
             name="Honeymoon Fund"
             link="https://www.zola.com/registry/claireandandy2020"
-          />
+          /> */}
           <Register
             image="/registry/amazon.jpg"
             name="Amazon Registry"
