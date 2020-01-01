@@ -9,6 +9,10 @@
       background-position-x: right;
     }
 
+    @include breakpoint-max(500px) {
+      background-position-x: -172px;
+    }
+
     h1 {
       color: #fff;
       font-size: 100px;
@@ -19,6 +23,11 @@
       @include breakpoint-max(768px) {
         font-size: 50px;
         top: 27%;
+      }
+
+      @include breakpoint-max(500px) {
+        left: 50%;
+        margin-left: -132px;
       }
     }
   }
