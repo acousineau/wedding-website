@@ -1,0 +1,280 @@
+@import "core";
+
+.Photos {
+  width: 90%;
+  max-width: 1000px;
+  margin: 90px auto 0;
+
+  .box {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+
+    h3 {
+      font-family: 'Montserrat';
+      position: absolute;
+      font-size: 16px;
+      bottom: 5px;
+      right: 10px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 15px 10px 10px;
+      border-radius: 10px;
+    }
+  }
+
+  h1 {
+    @include breakpoint-max(500px) {
+      font-size: 36px;
+    }
+  }
+
+  .years {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @include breakpoint-max(500px) {
+      display: none;
+    }
+
+    .wide-column {
+      width: 61%;
+    }
+  
+    .thin-column {
+      width: 37.5%;
+    }
+  
+    .sub-column {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .y-2013 {
+      padding-top: 62%;
+      margin-bottom: 15px;
+      background-image: url('/photography/years/2013.jpg');
+    }
+  
+    .y-2014 {
+      padding-top: 63%;
+      margin-bottom: 15px;
+      background-image: url('/photography/years/2014.jpg');
+    }
+  
+    .y-2015 {
+      padding-top: 116%;
+      margin-bottom: 15px;
+      background-image: url('/photography/years/2015.jpg');
+    }
+  
+    .y-2016 {
+      padding-top: 100%;
+      margin-bottom: 15px;
+      background-image: url('/photography/years/2016.jpg');
+    }
+  
+    .y-2017,
+    .y-2018 {
+      padding-top: 79.05%;
+      width: 48.5%;
+    }
+  
+    .y-2017 {
+      background-position: -40px 0;
+      background-image: url('/photography/years/2017.jpg');
+    }
+  
+    .y-2018 {
+      background-image: url('/photography/years/2018.jpg');
+    }
+  
+    .y-2019 {
+      background-image: url('/photography/years/2019.jpg');
+      padding-top: 116%;
+    }
+  }
+
+  .years-mobile {
+    display: none;
+
+    @include breakpoint-max(500px) {
+      display: flex;
+      flex-wrap: wrap;
+
+      > * {
+        padding-top: 66%;
+        margin-bottom: 15px;
+      }
+
+      .y-2013 {
+        background-image: url('/photography/years/2013.jpg');
+      }
+
+      .y-2014 {
+        background-image: url('/photography/years/2014.jpg');
+      }
+
+      .y-2015 {
+        background-position: 0 -30px;
+        background-image: url('/photography/years/2015.jpg');
+      }
+
+      .y-2016 {
+        background-position: 0 -30px;
+        background-image: url('/photography/years/2016.jpg');
+      }
+
+      .y-2017 {
+        background-position: 0 -70px;
+        background-image: url('/photography/years/2017.jpg');
+      }
+
+      .y-2018 {
+        background-position: 0 -170px;
+        background-image: url('/photography/years/2018.jpg');
+      }
+
+      .y-2019 {
+        background-position: 0 -70px;
+        background-image: url('/photography/years/2019.jpg');
+      }
+    }
+  }
+
+  .engagement {
+    margin-bottom: 20px;
+
+    @include breakpoint-max(500px) {
+      display: none;
+    }
+
+    .two-wide {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+    }
+
+    .three-tall-right {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 15px;
+
+      .left { width: 60.7%; }
+      .right { width: 37.7%; }
+    }
+
+    .three-tall-left {
+      display: flex;
+      justify-content: space-between;
+
+      .left { width: 37.7%; }
+      .right { width: 60.7%; }
+    }
+
+    .en-one {
+      background-image: url('/photography/engagement/claire_andy_one.jpg');
+      padding-top: 36.5%;
+      width: 49.4%;
+    }
+    .en-two { 
+      background-image: url('/photography/engagement/claire_andy_two.jpg');
+      padding-top: 36.5%;
+      width: 49.4%; 
+    }
+    .en-three {
+      background-position: 0 -60px;
+      background-image: url('/photography/engagement/claire_andy_three.jpg');
+      padding-top: 45.84%;
+      margin-bottom: 14px;
+    }
+    .en-four {
+      background-position: 0 -80px;
+      background-image: url('/photography/engagement/claire_andy_four.jpg');
+      padding-top: 45.84%;
+
+      @include breakpoint-max(915px) {
+        background-position: 0 -40px;
+      }
+    }
+    .en-five {
+      background-image: url('/photography/engagement/claire_andy_five.jpg');
+      padding-top: 150.81%;
+    }
+    .en-six {
+      background-image: url('/photography/engagement/claire_andy_six.jpg');
+      padding-top: 150.81%;
+    }
+    .en-seven {
+      background-position: 0 -140px;
+      background-image: url('/photography/engagement/claire_andy_seven.jpg');
+      margin-bottom: 12px;
+      padding-top: 45.84%;
+
+      @include breakpoint-max(915px) {
+        background-position: 0 -100px;
+      }
+    }
+    .en-eight {
+      background-position: 0 -140px;
+      background-image: url('/photography/engagement/claire_andy_eight.jpg');
+      padding-top: 45.84%;
+
+      @include breakpoint-max(915px) {
+        background-position: 0 -100px;
+      }
+    }
+  }
+
+  .engagement-mobile {
+    display: none;
+
+    @include breakpoint-max(500px) {
+      display: flex;
+      flex-wrap: wrap;
+
+      > * {
+        padding-top: 66%;
+        margin-bottom: 15px;
+      }
+
+      .en-one {
+        background-image: url('/photography/engagement/claire_andy_one.jpg');
+      }
+
+      .en-two {
+        background-image: url('/photography/engagement/claire_andy_two.jpg');
+      }
+
+      .en-three {
+        background-image: url('/photography/engagement/claire_andy_three.jpg');
+      }
+
+      .en-four {
+        background-image: url('/photography/engagement/claire_andy_four.jpg');
+      }
+
+      .en-five {
+        background-position: 0 -150px;
+        background-image: url('/photography/engagement/claire_andy_five.jpg');
+      }
+
+      .en-six {
+        background-position: 0 -180px;
+        background-image: url('/photography/engagement/claire_andy_six.jpg');
+      }
+
+      .en-seven {
+        background-position: 0 -20px;
+        background-image: url('/photography/engagement/claire_andy_seven.jpg');
+      }
+
+      .en-eight {
+        background-image: url('/photography/engagement/claire_andy_eight.jpg');
+      }
+    }
+  }
+}
+

@@ -1,0 +1,80 @@
+@import "core";
+
+.Registry {
+  .Hero {
+    background-image: url("/crops/registry-background.jpg");
+
+    @include breakpoint-max(768px) {
+      height: 210px;
+      background-position-x: right;
+    }
+  }
+
+  p {
+    @include breakpoint-max(500px) {
+      font-size: 16px;
+    }
+  }
+
+  .description-container {
+    margin-bottom: 40px;
+  }
+
+  .register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Register {
+    width: 66%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 20px 0px #ddd;
+
+    @include breakpoint-max(500px) {
+      width: 100%;
+    }
+  
+    header {
+      background-size: cover;
+      border-top-right-radius: 10px;
+      border-top-left-radius: 10px;
+    }
+  
+    .content {
+      padding: 20px;
+  
+      .Register--title {
+        font-size: 34px;
+        text-shadow: 1px 1px 10px #aaa;
+      }
+  
+      a {
+        text-decoration: none;
+        position: relative;
+        font-weight: normal;
+  
+        &:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: 0;
+          left: 0;
+          background-color: #888;
+          visibility: hidden;
+          transform: scaleX(0);
+          transition: all 0.3s ease-in-out 0s;
+        }
+    
+        &:hover:before {
+          visibility: visible;
+          transform: scaleX(1);
+        }
+      }
+    }
+  }
+  
+}

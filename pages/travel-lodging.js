@@ -3,7 +3,7 @@ import TravelAndLodging from '../components/pages/TravelAndLodging'
 
 const Main = () => {
   return (
-    <Layout>
+    <Layout navTitle="Travel and Lodging">
       <TravelAndLodging />
     </Layout>
   )

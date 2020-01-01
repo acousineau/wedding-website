@@ -13,6 +13,7 @@ const Nav = styled.nav`
   .desktop-nav {
     display: flex;
     justify-content: space-between;
+    box-shadow: 0 2px 10px #ccc;
   }
 
   & > .desktop-nav {
@@ -29,8 +30,24 @@ const Nav = styled.nav`
   }
 
   @media only screen and (max-width: 768px) {
+    .desktop-nav {
+      justify-content: flex-start;
+    }
+
     .desktop-nav li {
       display: none;
+    }
+  }
+
+  .mobile-nav-title {
+    display: none;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .mobile-nav-title {
+      display: inline-block;
+      font-size: 32px;
+      margin-bottom: 0;
     }
   }
 
@@ -71,6 +88,7 @@ const NavHamburger = styled.button`
   width: 36px;
   height: 36px;
   padding: 0;
+  margin-right: 20px;
 
   &:hover {
     background: transparent;
@@ -118,7 +136,7 @@ const NavHamburger = styled.button`
   }
 `
 
-const Navigation = () => {
+const Navigation = ({ navTitle }) => {
   const [isMobileMenuOpen, toggleMobileMenu] = React.useState(false)
 
   return (
@@ -130,6 +148,7 @@ const Navigation = () => {
         >
           <div />
         </NavHamburger>
+        <h1 className="t-dark-blue mobile-nav-title">{navTitle}</h1>
         <li>
           <Link href="/">
             <a>Home</a>

@@ -3,7 +3,7 @@ import RSVP from '../components/pages/RSVP'
 
 const Main = () => {
   return (
-    <Layout>
+    <Layout navTitle="RSVP">
       <RSVP />
     </Layout>
   )

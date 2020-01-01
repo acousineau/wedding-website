@@ -15,8 +15,8 @@ const WeddingDetails = () => {
             shoes are&nbsp;encouraged.
           </p>
           <p>
-            Due to venue size restrictions, we ask that no children under the age of 13 attend the
-            wedding&nbsp;reception.
+            We love your kids, we really do! However, due to venue size restrictions, we are having
+            an <strong>adults only</strong> wedding.
           </p>
         </header>
         <section className="schedule">

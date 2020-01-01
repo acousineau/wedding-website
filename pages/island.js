@@ -3,7 +3,7 @@ import TheIsland from '../components/pages/TheIsland'
 
 const Main = () => {
   return (
-    <Layout>
+    <Layout navTitle="The Island">
       <TheIsland />
     </Layout>
   )

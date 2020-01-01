@@ -3,7 +3,7 @@ import WeddingDetails from '../components/pages/WeddingDetails'
 
 const Main = () => {
   return (
-    <Layout>
+    <Layout navTitle="Wedding Details">
       <WeddingDetails />
     </Layout>
   )
