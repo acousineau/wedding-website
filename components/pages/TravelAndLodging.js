@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import Hero from '../styles/Hero'
 import Container from '../styles/Container'
 import Transportation from '../travel/Transportation'
@@ -10,7 +9,7 @@ import './TravelAndLodging.scss'
 const TravelAndLodging = () => {
   return (
     <div className="TravelAndLodging">
-      <Hero className="Hero"></Hero>
+      <Hero className="Hero" />
       <Container>
         <section style={{ marginBottom: '40px' }}>
           <header>
@@ -25,11 +24,18 @@ const TravelAndLodging = () => {
               text: 'Steamship Authority Info',
               url: 'https://www.steamshipauthority.com/'
             }}
-            text="The most common way to get to the island is by taking the Steamship Authority ferry
-            from Woods Hole, MA. This is the only option for bringing a car with you, which
-            requires an advance reservation (book as early as you can). You can also park in one
-            of the desginated lots and take the ferry on foot, which does not require any advance
-            booking. The ferry has a number of departures daily and takes about 45&nbsp;mintues."
+            text={link => {
+              return (
+                <p>
+                  The most common way to get to the island is by taking the Steamship Authority
+                  ferry from Woods Hole, MA. This is the only option for bringing a car with you,
+                  which requires an advance reservation <strong>(book as early as you can).</strong>{' '}
+                  You can also park in one of the designated lots and take the ferry on foot, which
+                  does not require any advance booking. The ferry has a number of departures daily
+                  and takes about 45&nbsp;minutes. {link}
+                </p>
+              )
+            }}
           />
           <Transportation
             image={{
@@ -40,8 +46,14 @@ const TravelAndLodging = () => {
               text: 'Sea Streak Ferry Service',
               url: 'https://seastreak.com/'
             }}
-            text="A separate fast ferry service can take you to the island directly from New York or
-            Boston&nbsp;(on foot):"
+            text={link => {
+              return (
+                <p>
+                  A separate fast ferry service can take you to the island directly from New York or
+                  Boston&nbsp;(on foot): {link}
+                </p>
+              )
+            }}
           />
           <Transportation
             image={{
@@ -52,7 +64,14 @@ const TravelAndLodging = () => {
               url: 'https://www.capeair.com/',
               text: 'Cape Air Service'
             }}
-            text="Alternatively, Cape Air offers year round air travel from Boston Logan to Martha's&nbsp;Vineyard:"
+            text={link => {
+              return (
+                <p>
+                  Alternatively, Cape Air offers year round air travel from Boston Logan to
+                  Martha's&nbsp;Vineyard: {link}
+                </p>
+              )
+            }}
           />
           <p>
             Visit the local{' '}

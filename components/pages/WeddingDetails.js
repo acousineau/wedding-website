@@ -7,7 +7,7 @@ import './WeddingDetails.scss'
 const WeddingDetails = () => {
   return (
     <div className="WeddingDetails">
-      <Hero className="Hero"></Hero>
+      <Hero className="Hero" />
       <Container>
         <header className="main-details">
           <p>

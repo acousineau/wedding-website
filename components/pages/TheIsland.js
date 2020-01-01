@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import Hero from '../styles/Hero'
 import Container from '../styles/Container'
 
@@ -10,7 +9,7 @@ import './TheIsland.scss'
 const TheIsland = () => {
   return (
     <div className="TheIsland">
-      <Hero className="Hero"></Hero>
+      <Hero className="Hero" />
       <Container>
         <section className="map-container">
           <header>
@@ -41,7 +40,7 @@ const TheIsland = () => {
                   alt: 'Lighthouse Beach'
                 }}
                 address="230 N Water St, Edgartown"
-                description="Swing by the Edgartown Lighthouse and take a scenic walk on the beach with views of Edgartown Harbor and Chappaquiddick&nbsp;Island"
+                description="Swing by the Edgartown Lighthouse and take a scenic walk on the beach with views of Edgartown Harbor and Chappaquiddick&nbsp;Island."
               />
               <Location
                 reverseDisplay

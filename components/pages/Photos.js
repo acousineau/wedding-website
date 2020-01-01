@@ -1,15 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import './Photos.scss'
-
-const Photo = styled.article`
-  position: relative;
-  background-size: cover;
-  display: inline-block;
-  margin: 0 0 10px;
-  width: 100%;
-`
 
 export const Photos = () => {
   return (

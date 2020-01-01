@@ -10,12 +10,11 @@ export default function Transportation({ link, image, text }) {
           <img src={image.url} alt={image.alt} />
         </a>
       </div>
-      <p>
-        {text}{' '}
+      {text(
         <a href={link.url} rel="noopener noreferrer" target="_blank">
           {link.text}
         </a>
-      </p>
+      )}
     </article>
   )
 }
