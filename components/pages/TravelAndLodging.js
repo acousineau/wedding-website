@@ -110,11 +110,17 @@ const TravelAndLodging = () => {
               name="Vineyard Square Hotel"
               address="38 N Water St, Edgartown"
             />
-            <Lodge
+            {/* <Lodge
               image="/travel/clarion.jpg"
               link="https://www.choicehotels.com/massachusetts/edgartown/ascend-hotels/ma073"
               name="Clarion Inn / Ascend&nbsp;Hotel"
               address="227 Upper Main St, Edgartown"
+            /> */}
+            <Lodge
+              image="/travel/harborside-inn.jpg"
+              link="https://www.theharborsideinn.com/"
+              name="Harborside Inn"
+              address="3 South Water St, Edgartown"
             />
             <Lodge
               image="/travel/ashley-inn.jpg"
