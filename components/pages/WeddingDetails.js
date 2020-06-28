@@ -14,17 +14,21 @@ const WeddingDetails = () => {
             Cocktail attire. Weather permitting, the ceremony will take place on sand. Comfortable
             shoes are&nbsp;encouraged.
           </p>
-          <p>
-            We love your kids, we really do! However, due to venue size restrictions, we are having
-            an <strong>adults only</strong> wedding.
-          </p>
         </header>
         <section className="schedule">
+          <article style={{ marginBottom: '50px' }}>
+            <header>
+              <h3>Friday, Sept 11,&nbsp;2020</h3>
+              <h4>6:00pm: Welcome Party at 19 Raw Oyster Bar</h4>
+              <p className="t-bold">19 Church St,&nbsp;Edgartown</p>
+              <p>Dinner and drinks will be served.</p>
+            </header>
+          </article>
           <article>
             <header>
               <h3>Saturday, Sept 12,&nbsp;2020</h3>
-              <h4>4:15pm: Ceremony at Edgartown&nbsp;Lighthouse</h4>
-              <p className="t-bold">230 N Water St,&nbsp;Edgartown</p>
+              <h4>4:00pm: Ceremony at Edgartown&nbsp;Lighthouse</h4>
+              <p className="t-bold">121 N Water St,&nbsp;Edgartown</p>
             </header>
             <p>
               <span className="t-bold">Directions:</span> The path to the lighthouse begins across
@@ -46,13 +50,10 @@ const WeddingDetails = () => {
           <article>
             <header>
               <h3>Sunday, Sept 13,&nbsp;2020</h3>
-              <h4>9:30am - 11:30am: Brunch at the Harbor View&nbsp;Hotel</h4>
-              <p className="t-bold">131 N Water St,&nbsp;Edgartown</p>
+              <h4>10:00am - 12:00pm: Farewell Breakfast at the Demski Residence</h4>
+              <p className="t-bold">33 Anthier's Way,&nbsp;Edgartown</p>
             </header>
-            <p>
-              Please join us for a post-wedding brunch at the Harbor View Hotel before you
-              head&nbsp;home!
-            </p>
+            <p>Stop by for pastries and coffee before you depart.</p>
           </article>
         </section>
       </Container>
