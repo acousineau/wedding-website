@@ -19,8 +19,8 @@ const WeddingDetails = () => {
           <article style={{ marginBottom: '50px' }}>
             <header>
               <h3>Friday, Sept 11,&nbsp;2020</h3>
-              <h4>6:00pm: Welcome Party at 19 Raw Oyster Bar</h4>
-              <p className="t-bold">19 Church St,&nbsp;Edgartown</p>
+              <h4>6:00pm: Welcome Party at at the Demski Residence</h4>
+              <p className="t-bold">33 Anthier's Way,&nbsp;Edgartown</p>
               <p>Dinner and drinks will be served.</p>
             </header>
           </article>
