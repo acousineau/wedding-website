@@ -17,10 +17,6 @@ const Registry = () => {
             appreciate monetary gifts. If you prefer to give a traditional gift, our Amazon registry
             is&nbsp;below!
           </p>
-          <p>
-            The biggest gift of all, however, is your presence on our Big Day. Thank you for your
-            love and support, we can't wait to celebrate with you in&nbsp;September!
-          </p>
         </div>
         <div className="register-container">
           {/* <Register
