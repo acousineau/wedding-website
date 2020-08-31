@@ -50,7 +50,7 @@ const WeddingDetails = () => {
           <article>
             <header>
               <h3>Sunday, Sept 13,&nbsp;2020</h3>
-              <h4>10:00am - 12:00pm: Farewell Breakfast at the Demski Residence</h4>
+              <h4>09:30am - 11:30am: Farewell Breakfast at the Demski Residence</h4>
               <p className="t-bold">33 Anthier's Way,&nbsp;Edgartown</p>
             </header>
             <p>Stop by for a light breakfast before you depart.</p>
