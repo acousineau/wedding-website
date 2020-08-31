@@ -42,8 +42,8 @@ const WeddingDetails = () => {
               <p className="t-bold">137 Main St,&nbsp;Edgartown</p>
             </header>
             <p>
-              Please join us for dinner and dancing at Atria following the ceremony. We will offer a
-              shuttle service to guests. It is a 20 - 25 minute walk directly from the
+              Please join us for dinner at Atria following the ceremony. We will offer a shuttle
+              service to guests. It is a 20 - 25 minute walk directly from the
               Edgartown&nbsp;Lighthouse.
             </p>
           </article>
@@ -53,7 +53,7 @@ const WeddingDetails = () => {
               <h4>10:00am - 12:00pm: Farewell Breakfast at the Demski Residence</h4>
               <p className="t-bold">33 Anthier's Way,&nbsp;Edgartown</p>
             </header>
-            <p>Stop by for pastries and coffee before you depart.</p>
+            <p>Stop by for a light breakfast before you depart.</p>
           </article>
         </section>
       </Container>
