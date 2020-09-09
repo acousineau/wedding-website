@@ -15,6 +15,43 @@
     text-align: center;
   }
 
+  .cocktails {
+    font-weight: bold;
+  }
+
+  caption {
+    display: block;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: normal;
+  }
+
+  .beers {
+    li {
+      margin-bottom: 7px;
+    }
+  }
+
+  .beer, .brewery {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+  }
+
+  .beer {
+    width: 68%;
+    padding-right: 2.5%;
+  }
+
+  .abv {
+    display: block;
+  }
+
+  .brewery {
+    width: 32%;
+    padding-left: 2.5%;
+  }
+
   // p {
   //   @include breakpoint-max(500px) {
   //     font-size: 16px;
