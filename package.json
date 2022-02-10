@@ -25,7 +25,7 @@
     "isomorphic-unfetch": "3.0.0",
     "mongoose": "5.9.20",
     "next": "9.4.4",
-    "node-sass": "4.14.0",
+    "node-sass": "7.0.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "styled-components": "5.1.1"
